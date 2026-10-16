@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кубик & Co — Бронирование</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logoBox">
+                <a href="page1.html"><img src="images/logo.png" alt="Логотип" class="logo"></a>
+            </div>
+            <nav class="navMenu">
+                <a href="page1.html" class="navLink">О нас</a>
+                <a href="page2.html" class="navLink">Игры</a>
+                <a href="#" class="navLink">Тарифы</a>
+                <a href="page3.html" class="navLink">Бронирование</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <h1 class="bookingTitle">Бронирование</h1>
+            <p class="bookingSubtitle">
+                Чтобы забронировать стол в<br>
+                общем зале вы можете<br>
+                оставить заявку ниже или<br>
+                позвонить напрямую
+            </p>
+
+            <div class="bookingBox">
+                <form class="bookingForm" id="bookingForm" novalidate>
+                    <div class="row customGapX">
+                        <div class="col-6">
+                            <label for="day" class="formLabelCustom">День</label>
+                            <input type="text" id="day" class="formInputCustom" placeholder="Понедельник" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="guests" class="formLabelCustom">Количество гостей</label>
+                            <input type="text" id="guests" class="formInputCustom" placeholder="Количество гостей" required>
+                        </div>
+                    </div>
+
+                    <div class="row customGapX rowSpacing190">
+                        <div class="col-6">
+                            <label for="name" class="formLabelCustom">Имя</label>
+                            <input type="text" id="name" class="formInputCustom" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="phone" class="formLabelCustom">Номер телефона</label>
+                            <input type="tel" id="phone" class="formInputCustom" placeholder="+7 000 000 00 00" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <button type="submit" class="submitBtnCustom">
+                                <span>Отправить</span>
+                                <span class="btnArrow"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footerLeft">
+                Имеете вопрос? Позвоните или напишите нам в Telegram или Whatsapp - +7(000)000-00-00
+            </div>
+            <div class="footerRight">
+                <a href="#" class="footerLink">Вконтакте</a>
+                <a href="#" class="footerLink">Телеграм</a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="notifOverlay" id="notificationOverlay">
+        <div class="notifWindow">
+            <span class="notifText">Заявка успешно отправлена!</span>
+            <button class="notifClose" id="notificationCloseBtn">&times;</button>
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

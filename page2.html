@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кубик & Co — Игры</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logoBox">
+                <a href="page1.html"><img src="images/logo.png" alt="Логотип" class="logo"></a>
+            </div>
+            <nav class="navMenu">
+                <a href="page1.html" class="navLink">О нас</a>
+                <a href="page2.html" class="navLink">Игры</a>
+                <a href="#" class="navLink">Тарифы</a>
+                <a href="page3.html" class="navLink">Бронирование</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <h1 class="mainTitle">Игры</h1>
+
+            <div class="cardsGrid">
+                <div class="card">
+                    <img src="images/dragon2.png" alt="Дракон" class="cardImage">
+                    <div class="cardContent">
+                        <img src="images/text1.png" alt="Проклятие костяного дракона" class="cardHeaderImg">
+                        <p class="cardText">
+                            Отправляйтесь в заброшенную шахту, где по легендам спит древний лич. Вам предстоит разгадать загадку, пережить ловушки и решить: будить ли дракона или украсть его сокровище тихо.
+                        </p>
+                        <button class="cardBtn openModalBtn">
+                            <span>Оставить заявку</span>
+                            <span class="btnArrow"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/tavern2.png" alt="Таверна" class="cardImage">
+                    <div class="cardContent">
+                        <img src="images/text2.png" alt="Таверна на краю бездны" class="cardHeaderImg">
+                        <p class="cardText">
+                            Вы — случайные посетители таверны, которая провалилась в демонический разлом. Теперь нужно найти выход, подружиться с бесами и найти портал домой. Смесь чёрного юмора и героизма.
+                        </p>
+                        <button class="cardBtn openModalBtn">
+                            <span>Оставить заявку</span>
+                            <span class="btnArrow"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/carnaval2.png" alt="Карнавал" class="cardImage">
+                    <div class="cardContent">
+                        <img src="images/text3.png" alt="Карнавал семи лун" class="cardHeaderImg">
+                        <p class="cardText">
+                            Герои попадают на праздник, где каждый аттракцион — это испытание на хитрость, смелость или глупость. В конце их ждёт настоящий фокусник, который украдёт одну из черт характера. Идеально для новичков в РИ.
+                        </p>
+                        <button class="cardBtn cardBtnLast openModalBtn">
+                            <span>Оставить заявку</span>
+                            <span class="btnArrow"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footerLeft">
+                Имеете вопрос? Позвоните или напишите нам в Telegram или Whatsapp - +7(000)000-00-00
+            </div>
+            <div class="footerRight">
+                <a href="#" class="footerLink">Вконтакте</a>
+                <a href="#" class="footerLink">Телеграм</a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modalOverlay" id="modalOverlay1">
+        <div class="modalWindow">
+            <div class="modalBody">
+                <h2 class="modalTitle">Хотите ли вы свои кубики?<br>(выбрать их можно на месте)</h2>
+                <form id="modalForm1">
+                    <div class="modalOptions">
+                        <label class="customRadio">
+                            <input type="radio" name="dice" value="yes" checked>
+                            <span class="radioCircle"></span>
+                            <span class="radioLabel">Да</span>
+                        </label>
+                        <label class="customRadio">
+                            <input type="radio" name="dice" value="no">
+                            <span class="radioCircle"></span>
+                            <span class="radioLabel">Нет</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modalFooter">
+                <button type="button" class="modalBtnBack" id="modalBackBtn1"><span class="modalArrowBack"></span></button>
+                <button type="button" class="modalBtnNext" id="modalNextBtn1"><span>Дальше</span><span class="modalArrowNext"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modalOverlay" id="modalOverlay2">
+        <div class="modalWindow">
+            <div class="modalBody">
+                <h2 class="modalTitle">Пожалуйста заполните заявку</h2>
+                <form id="modalForm2" class="modalForm">
+                    <div class="formGroup">
+                        <label for="name" class="formLabel">Имя</label>
+                        <input type="text" id="name" name="name" class="formInput" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="phone" class="formLabel">Номер телефона</label>
+                        <input type="tel" id="phone" name="phone" class="formInput" placeholder="+7 000 000 00 00" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modalFooter">
+                <button type="button" class="modalBtnBack" id="modalBackBtn2"><span class="modalArrowBack"></span></button>
+                <button type="button" class="modalBtnNext" id="modalNextBtn2"><span>Готово</span><span class="modalArrowNext"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="notifOverlay" id="notificationOverlay">
+        <div class="notifWindow">
+            <span class="notifText">Заявка успешно отправлена!</span>
+            <button class="notifClose" id="notificationCloseBtn">&times;</button>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

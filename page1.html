@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кубик & Co</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logoBox">
+                <a href="page1.html"><img src="images/logo.png" alt="Логотип" class="logo"></a>
+            </div>
+            <nav class="navMenu">
+                <a href="page1.html" class="navLink">О нас</a>
+                <a href="page2.html" class="navLink">Игры</a>
+                <a href="#" class="navLink">Тарифы</a>
+                <a href="page3.html" class="navLink">Бронирование</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="dndLogoBox">
+                <img src="images/dnd.png" alt="Dungeons and Dragons" class="dndLogo">
+            </div>
+
+            <div class="infoBlock">
+                <div class="leftCol">
+                    <h2 class="infoTitle">Что такое антикафе?</h2>
+                    <p class="infoText">
+                        Это заведение, где вы платите не за еду или напитки,
+                        а только за проведённое время, а чай, кофе и сладости
+                        включены в стоимость посещения. Это идеальное место
+                        для встреч с друзьями или спокойного отдыха
+                        без обязанности что-то заказывать!
+                    </p>
+                </div>
+
+                <div class="rightCol">
+                    <h2 class="infoTitleRight">Узнать больше о нас!</h2>
+                    <div class="arrowBox">
+                        <div class="arrowLine"></div>
+                        <div class="arrowHead"></div>
+                    </div>
+                    <button class="infoBtn">Узнать!</button>
+                </div>
+            </div>
+
+            <section class="events">
+                <h2 class="eventsTitle">БЛИЖАЙШИЕ ИВЕНТЫ</h2>
+
+                <div class="slider" id="slider">
+                    <button class="sliderBtn sliderPrev" id="sliderPrev" aria-label="Назад">&#10094;</button>
+
+                    <div class="sliderTrack" id="sliderTrack">
+                        <div class="slide"><img src="images/dragon.png" alt="Дракон"></div>
+                        <div class="slide"><img src="images/tavern.png" alt="Таверна"></div>
+                        <div class="slide"><img src="images/carnaval.png" alt="Карнавал"></div>
+                    </div>
+
+                    <button class="sliderBtn sliderNext" id="sliderNext" aria-label="Вперёд">&#10095;</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footerLeft">
+                Имеете вопрос? Позвоните или напишите нам в Telegram или Whatsapp - +7(000)000-00-00
+            </div>
+            <div class="footerRight">
+                <a href="#" class="footerLink">Вконтакте</a>
+                <a href="#" class="footerLink">Телеграм</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
